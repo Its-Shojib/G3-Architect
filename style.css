@@ -59,7 +59,7 @@ nav li a {
     margin-top: 20px;
 }
 
-.text-small{
+.text-small {
     color: #727272;
     font-weight: 400;
     font-size: .9rem;
@@ -68,6 +68,7 @@ nav li a {
 .banner-img img {
     width: 100%;
 }
+
 .btn {
     border-radius: 8px;
     background: #FF900E;
@@ -78,56 +79,66 @@ nav li a {
 }
 
 /* **Feature Section** */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.feature{
+
+.feature {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-top: 50px;
-    padding-left:300px;
+    padding-left: 300px;
 }
-.frature-img{
+
+.frature-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.frature-img img{
+
+.frature-img img {
     width: 100%;
 }
-.feature-text{
-    padding: 0px 50px; 
-    max-width: 520px;  
+
+.feature-text {
+    padding: 0px 50px;
+    max-width: 520px;
 }
-.feature-title{
+
+.feature-title {
     font-size: 2.5rem;
 }
-.text-gray{
+
+.text-gray {
     color: #727272;
     font-weight: 700;
 }
-.text-yellow{
-    color:#FF900E;
+
+.text-yellow {
+    color: #FF900E;
     font-weight: 700;
 }
 
 
 /* **Some Fact Section** */
-.some-fact{
+.some-fact {
     padding: 50px 200px;
 }
-.some-fact-title{
+
+.some-fact-title {
     font-size: 2rem;
 }
-.logo{
+
+.logo {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.box{
+
+.box {
     height: 150px;
     width: 180px;
     border: 2px solid royalblue;
@@ -137,65 +148,140 @@ main{
     align-items: center;
     flex-direction: column;
 }
-.number{
+
+.number {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 5px;
 }
 
-/* **Responsive Section** */
+/* **Sponsors Section** */
+.sponsor {
+    padding: 50px 200px;
+}
 
+.sponsor-text {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+
+}
+
+.sponsor-title {
+    font-size: 2rem;
+}
+
+.sponsor-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 50px;
+    gap: 50px;
+}
+
+.sponsor-img img {
+    width: 100%;
+}
+
+/* **Footer Section** */
+footer {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px;
+    margin: 20px 200px 50px 200px;
+}
+
+/* **Responsive Section** */
 @media screen and (max-width:576px) {
     header {
         padding: 10px 10px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         width: 100%;
     }
-    nav a{
+
+    nav a {
         padding: 10px 0px;
     }
 
     .banner-content {
         max-width: 400px;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
+
     .feature {
         padding-left: 10px;
         flex-direction: column;
     }
-    .feature-text,.some-fact{
-        padding: 10px 10px; 
-        max-width: 500px;  
+
+    .feature-text,
+    .some-fact {
+        padding: 10px 10px;
+        max-width: 500px;
     }
-    .logo{
+
+    .logo {
         display: grid;
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 10px;
     }
-    
+    .sponsor {
+        padding: 20px 0px;
+    }
+    .sponsor-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-img img{
+        width: auto;
+        margin: 0 auto;
+    }
+    footer {
+        margin: 0px;
+    }
+
 }
+
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
         padding: 10px 10px;
     }
+
     .feature {
-        padding-left:0px;
+        padding-left: 0px;
         flex-direction: column;
     }
-    .feature-text,.some-fact{
-        padding: 30px 20px; 
-        text-align: center; 
+
+    .feature-text,
+    .some-fact {
+        padding: 30px 20px;
+        text-align: center;
     }
-    .logo{
+
+    .logo {
         display: grid;
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 10px;
         align-items: center;
         justify-items: center;
+    }
+    .sponsor {
+        padding: 50px 0px;
+    }
+    .sponsor-img {
+        grid-template-columns: repeat(5, 100px);
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .sponsor-img img{
+       width: 100%;
+    }
+    footer {
+        margin: 0px;
     }
 
 }
