@@ -4,53 +4,44 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     font-family: 'Work Sans', sans-serif;
 }
 
 /* **Header Section** */
-
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 10px 240px;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-title {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
 }
-
 nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 nav li {
     list-style: none;
 }
-
 nav li a {
     text-decoration: none;
     padding-right: 30px;
+    color: #131313;
 }
-
-
 /* **Banner Section** */
 .banner-content {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
-
 .banner-title {
     color: #131313;
     font-size: 3rem;
@@ -58,17 +49,14 @@ nav li a {
     padding: 10px 0px;
     margin-top: 20px;
 }
-
 .text-small {
     color: #727272;
     font-weight: 400;
     font-size: .9rem;
 }
-
 .banner-img img {
     width: 100%;
 }
-
 .btn {
     border-radius: 8px;
     background: #FF900E;
@@ -77,67 +65,99 @@ nav li a {
     border: 0;
     margin: 20px 0px;
 }
-
 /* **Feature Section** */
 main {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 .feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
-    padding-left: 300px;
+    padding: 50px 250px;
 }
-
 .frature-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    width: 50%;
 }
-
 .frature-img img {
     width: 100%;
 }
-
 .feature-text {
     padding: 0px 50px;
-    max-width: 520px;
+    width: 50%;
 }
-
 .feature-title {
     font-size: 2.5rem;
 }
-
 .text-gray {
     color: #727272;
     font-weight: 700;
 }
-
 .text-yellow {
     color: #FF900E;
     font-weight: 700;
 }
-
-
+/* **Enjoy Section** */
+.enjoy {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 220px;
+    gap: 70px;
+}
+.enjoy-text {
+    width: 50%;
+}
+.en-title {
+    margin-top: 20px;
+    padding-left: 10px;
+    border-left: 5px solid orange;
+    margin-bottom: 20px;
+}
+.card {
+    padding: 20px;
+}
+.card p{
+    padding-top: 10px;
+}
+.enjoy-img {
+    width: 50%;
+}
+.enjoy-img img {
+    width: 100%;
+}
+.ten {
+    width: 160px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 15px;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    right: 50px;
+}
+.ten-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
 /* **Some Fact Section** */
 .some-fact {
-    padding: 50px 200px;
+    padding: 0px 200px;
 }
-
 .some-fact-title {
     font-size: 2rem;
 }
-
 .logo {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .box {
     height: 150px;
     width: 180px;
@@ -148,39 +168,31 @@ main {
     align-items: center;
     flex-direction: column;
 }
-
 .number {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 5px;
 }
-
 /* **Sponsors Section** */
 .sponsor {
     padding: 50px 200px;
 }
-
 .sponsor-text {
     text-align: center;
     padding: 0px 20px 20px 20px;
-
 }
-
 .sponsor-title {
     font-size: 2rem;
 }
-
 .sponsor-img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 20px 50px;
     gap: 50px;
 }
-
 .sponsor-img img {
     width: 100%;
 }
-
 /* **Footer Section** */
 footer {
     text-align: center;
@@ -189,41 +201,44 @@ footer {
     padding: 20px;
     margin: 20px 200px 50px 200px;
 }
-
 /* **Responsive Section** */
 @media screen and (max-width:576px) {
     header {
         padding: 10px 10px;
     }
-
     nav {
         flex-direction: column;
         width: 100%;
     }
-
     nav a {
         padding: 10px 0px;
     }
-
     .banner-content {
         max-width: 400px;
     }
-
     .banner-img img {
         width: 100%;
     }
-
     .feature {
         padding-left: 10px;
         flex-direction: column;
+        padding: 20px 0px;
     }
-
+    .frature-img {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .enjoy {
+        align-items: center; 
+        padding: 10px 0px; 
+        flex-direction: column;
+        gap: 10px;
+    }
     .feature-text,
     .some-fact {
         padding: 10px 10px;
         max-width: 500px;
     }
-
     .logo {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -236,32 +251,46 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .sponsor-img img{
+    .sponsor-img img {
         width: auto;
         margin: 0 auto;
     }
     footer {
         margin: 0px;
     }
-
 }
-
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
         padding: 10px 10px;
     }
-
     .feature {
         padding-left: 0px;
         flex-direction: column;
+        padding: 10px 10px;
     }
-
+    .frature-img{
+        width: 80%;
+    }
     .feature-text,
     .some-fact {
         padding: 30px 20px;
         text-align: center;
     }
-
+    .feature-text{
+        width:80%;
+    }
+    .enjoy {
+        align-items: center;
+        padding: 10px 30px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .enjoy-text {
+        width: 100%;
+    }
+    .enjoy-img {
+        width: 70%;
+    }
     .logo {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -277,11 +306,10 @@ footer {
         gap: 10px;
         justify-content: space-around;
     }
-    .sponsor-img img{
-       width: 100%;
+    .sponsor-img img {
+        width: 70%;
     }
     footer {
         margin: 0px;
     }
-
 }
