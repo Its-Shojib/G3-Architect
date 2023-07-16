@@ -59,16 +59,15 @@ nav li a {
     margin-top: 20px;
 }
 
-.banner-text {
+.text-small{
     color: #727272;
-    text-align: center;
     font-weight: 400;
+    font-size: .9rem;
 }
 
 .banner-img img {
     width: 100%;
 }
-
 .btn {
     border-radius: 8px;
     background: #FF900E;
@@ -78,6 +77,41 @@ nav li a {
     margin: 20px 0px;
 }
 
+/* **Feature Section** */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 50px;
+    padding-left:300px;
+}
+.frature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.frature-img img{
+    width: 100%;
+}
+.feature-text{
+    padding: 0px 50px; 
+    max-width: 520px;  
+}
+.feature-title{
+    font-size: 2.5rem;
+}
+.text-gray{
+    color: #727272;
+    font-weight: 700;
+}
+.text-yellow{
+    color:#FF900E;
+    font-weight: 700;
+}
 
 /* **Responsive Section** */
 
@@ -99,10 +133,26 @@ nav li a {
     .banner-img img{
         width: 100%;
     }
+    .feature {
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .feature-text{
+        padding: 0px 0px; 
+        max-width: 500px;  
+    }
     
 }
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
         padding: 10px 10px;
+    }
+    .feature {
+        padding-left:0px;
+        flex-direction: column;
+    }
+    .feature-text{
+        padding: 30px 0px; 
+        max-width: 600px;  
     }
 }
